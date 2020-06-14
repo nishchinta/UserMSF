@@ -1,0 +1,39 @@
+
+ecom.management.UserMS.Controller.SellerController#removeseller(Ljava/lang/Integer;)Ljava/lang/String;j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaS S("1*›
+
+1j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaT T(•
+’
+j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaT T(
+%0org.slf4j.Logger"__id*
+""ÌÉ
+j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaT T(A
+
+%1void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%0org.slf4j.Logger**(
+&Request for order removal by seller {}*
+
+selleridjava.lang.Integer2*info(Ljava/lang/String;Ljava/lang/Object;)ò
+ï
+j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaU U(1
+%2+com.management.UserMS.service.SellerService"__id*H*F3
+1com.management.UserMS.Controller.SellerController"
+sellerServiceÄÁ
+j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaU U(&
+
+%3void"Ncom.management.UserMS.service.SellerService#removeseller(Ljava/lang/Integer;)V*3
+1
+%2+com.management.UserMS.service.SellerService*
+
+selleridjava.lang.Integer2!removeseller(Ljava/lang/Integer;)"†
+j
+`C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/SellerController.javaV V( 
+Deleted successfully:
+selleridjava.lang.IntegerB53
+1com.management.UserMS.Controller.SellerController

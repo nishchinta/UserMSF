@@ -1,0 +1,40 @@
+
+ccom.management.UserMS.Controller.BuyerController#removebuyer(Ljava/lang/Integer;)Ljava/lang/String;i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javaq q("1*Å
+
+1i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javar r(Î
+Ë
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javar r(
+%0org.slf4j.Logger"__id*@*>2
+0com.management.UserMS.Controller.BuyerController"
+loggerÉÆ
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javar r(?
+
+%1void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%0org.slf4j.Logger*)'
+%Request for order removal by buyer {}*
+
+buyeridjava.lang.Integer2*info(Ljava/lang/String;Ljava/lang/Object;)î
+ë
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javas s(0
+%2*com.management.UserMS.service.BuyerService"__id*F*D2
+0com.management.UserMS.Controller.BuyerController"
+buyerService¾»
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javas s(#
+
+%3void"Lcom.management.UserMS.service.BuyerService#removebuyer(Ljava/lang/Integer;)V*2
+0
+%2*com.management.UserMS.service.BuyerService*
+
+buyeridjava.lang.Integer2 removebuyer(Ljava/lang/Integer;)"…
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javat t( 
+Deleted successfully:
+buyeridjava.lang.IntegerB42
+0com.management.UserMS.Controller.BuyerController

@@ -1,0 +1,7 @@
+organization=nishchinta
+projectKey=nishchinta_UserMSF
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.8621
+dashboardUrl=https://sonarcloud.io/dashboard?id=nishchinta_UserMSF
+ceTaskId=AXKykEd2jOB9WYKlCnMg
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXKykEd2jOB9WYKlCnMg

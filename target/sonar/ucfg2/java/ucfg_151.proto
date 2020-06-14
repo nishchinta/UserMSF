@@ -1,0 +1,52 @@
+
+Bcom.management.UserMS.dto.WishlistDTO#toString()Ljava/lang/String;^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java( (("1*«
+
+1^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)	 )( º
+·
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)" )()
+%0java.lang.Integer"__id*6*4'
+%com.management.UserMS.dto.WishlistDTO"	
+buyerid»
+¸
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)	 )()
+%1java.lang.String"__concat*
+WishlistDTO [BuyerId=*
+
+%0java.lang.Integer¬
+©
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)	 )(5
+%2java.lang.String"__concat*
+
+%1java.lang.String*	
+ProdId=¹
+¶
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)7 )(=
+%3java.lang.Integer"__id*5*3'
+%com.management.UserMS.dto.WishlistDTO"
+prodidº
+·
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)	 )(=
+%4java.lang.String"__concat*
+
+%2java.lang.String*
+
+%3java.lang.Integer¦
+£
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java)	 )(A
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+]"z
+^
+TC:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/dto/WishlistDTO.java) )(B
+
+%5java.lang.StringB)'
+%com.management.UserMS.dto.WishlistDTO

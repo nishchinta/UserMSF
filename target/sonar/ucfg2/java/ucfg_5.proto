@@ -1,0 +1,18 @@
+
+Pcom.management.UserMS.Validator.SellerValidator#isValidName(Ljava/lang/String;)Zh
+^C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/SellerValidator.java3 3(""1*‘
+1h
+^C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/SellerValidator.java5	 5(­
+ª
+h
+^C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/SellerValidator.java5	 5(F
+%0boolean"Ljava.util.regex.Pattern#matches(Ljava/lang/String;Ljava/lang/CharSequence;)Z*"
+java.util.regex.Pattern*(&
+$^[a-zA-Z]+[-a-zA-Z\\s]+([-a-zA-Z]+)$*
+
+namejava.lang.String"r
+h
+^C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/SellerValidator.java5 5(G
+"":
+namejava.lang.StringB3"1
+/com.management.UserMS.Validator.SellerValidator

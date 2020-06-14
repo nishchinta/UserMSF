@@ -1,0 +1,18 @@
+
+Pcom.management.UserMS.Validator.BuyerValidator#isValidEmail(Ljava/lang/String;)Zg
+]C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/BuyerValidator.java. .(#"1*Ç
+1g
+]C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/BuyerValidator.java0	 0(†
+ù
+g
+]C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/BuyerValidator.java0	 0(9
+%0boolean"Ljava.util.regex.Pattern#matches(Ljava/lang/String;Ljava/lang/CharSequence;)Z*"
+java.util.regex.Pattern*
+^[A-Za-z0-9+_.-]+@(.+)$*
+
+emailjava.lang.String"q
+g
+]C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Validator/BuyerValidator.java0 0(:
+"":
+emailjava.lang.StringB2"0
+.com.management.UserMS.Validator.BuyerValidator

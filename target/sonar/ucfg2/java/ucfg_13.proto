@@ -1,0 +1,102 @@
+
+wcom.management.UserMS.Controller.BuyerController#addtowishlist(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javay y("startingBlock*ô
+2i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java~
+ ~("ƒ
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java~ ~(
+Added successfully*‡
+startingBlocki
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javay y([Ý
+Ú
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javay: y(G
+%8"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*!
+
+productnamejava.lang.String¥
+¢
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.javayO y(Z
+productnamejava.lang.String"__annotation*
+
+%8*
+5*¸
+3i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java| |(oÓ
+Ð
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java| |(o/
+prodDTO$com.management.UserMS.dto.ProductDTO"__id*,
+*
+%5$com.management.UserMS.dto.ProductDTOî
+ë
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java} }(0
+%6*com.management.UserMS.service.BuyerService"__id*F*D2
+0com.management.UserMS.Controller.BuyerController"
+buyerServiceûø
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java} }(&
+
+%7void"acom.management.UserMS.service.BuyerService#addtowishlist(Lcom/management/UserMS/dto/ProductDTO;)V*2
+0
+%6*com.management.UserMS.service.BuyerService*1
+/
+prodDTO$com.management.UserMS.dto.ProductDTO25addtowishlist(Lcom/management/UserMS/dto/ProductDTO;)*
+2*¯	
+4i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java| |(ë
+è
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java| |(1
+%2+org.springframework.web.client.RestTemplate"__id*B*@2
+0com.management.UserMS.Controller.BuyerController"
+
+templateÀ
+½
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java|, |(U
+%3java.lang.String"__concat*
+http://PRODUCTMS*
+/products/productid/É
+Æ
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java|, |(\
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+
+prodidjava.lang.Integer¼¹
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java| |(n*
+%5$com.management.UserMS.dto.ProductDTO"‚org.springframework.web.client.RestTemplate#getForObject(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;*3
+1
+%2+org.springframework.web.client.RestTemplate*
+
+%4java.lang.String*
+""2DgetForObject(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;)*
+3*‘
+5i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java{ {(	Î
+Ë
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java{ {(	
+%0org.slf4j.Logger"__id*@*>2
+0com.management.UserMS.Controller.BuyerController"
+loggerÊÇ
+i
+_C:/Users/Nishchinta/UserMSF/src/main/java/com/management/UserMS/Controller/BuyerController.java{ {(B
+
+%1void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%0org.slf4j.Logger*'%
+#Add products to wishlist request {}*!
+
+productnamejava.lang.String2*info(Ljava/lang/String;Ljava/lang/Object;)*
+4:
+prodidjava.lang.Integer:
+productnamejava.lang.StringB42
+0com.management.UserMS.Controller.BuyerController

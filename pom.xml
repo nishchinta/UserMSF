@@ -17,11 +17,23 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
+	<groupId>com.management</groupId>
+	<artifactId>UserMS</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>UserMS</name>
+	<description>UserMS</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>8</java.version>
+		
+		<sonar.projectKey>nishchinta_UserMSF</sonar.projectKey>
+		<sonar.organization>nishchinta</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>41557332e7e8e8c8b86dd97c507f883cbff37bbd</sonar.login>
+		
 	</properties>
 <dependencyManagement>
 		<dependencies>
