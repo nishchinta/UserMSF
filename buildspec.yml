@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Logging into Amazon ECR
       - aws --version
-      - $(aws ecr get-login --no-include-email --region ap-south-1)
+      - $ (aws ecr get-login --no-include-email --region ap-south-1)
       - REPOSITORY_URI=498684896481.dkr.ecr.ap-south-1.amazonaws.com/user
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
@@ -28,7 +28,7 @@ phases:
       - echo build started on `date`
       - echo testing code with sonar
       - mvn clean install -D"sonar.login"=$LOGIN -D"sonar.host.url"=$HOST -D"sonar.projectKey"=$Project -D"sonar.organization"=Organization
-      - sleep 5
+      - Sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
       - if [ $(jq -r '.projectStatus.status'  result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
@@ -40,7 +40,6 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the docker images
-      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY URI:$IMAGE_TAG
       - echo Writing image definitions file...
