@@ -1,13 +1,12 @@
 version: 0.2
 
-
 env:
   secrets-manager:
-    LOGIN: SonarCredentialsU:sonartoken 
-    HOST: SonarCredentialsU:host
-    Organization: SonarCredentialsU:organization
-    Project: SonarCredentialsU:projectKey
-    
+    LOGIN: SonarUserCredentialsU:sonartoken
+    HOST: SonarUserCredentialsU:host
+    Organization: SonarUserCredentialsU:organization
+    Project: SonarUserCredentialsU:projectKey
+
 phases:
   install:
     runtime-versions:
@@ -27,11 +26,11 @@ phases:
     commands:
       - echo build started on `date`
       - echo testing code with sonar
-      - mvn clean install -D"sonar.login"=$LOGIN -D"sonar.host"=$HOST -D"sonar.projectKey"=$Project -D"sonar.organization"=$Organization
+      - mvn clean install -D"sonar.login"=$LOGIN -D"sonar.host.url"=$HOST -D"sonar.projectKey"=$Project -D"sonar.organization"=$Organization
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
-      - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD BUILD SUCCEEDING -eq 0 ;fi
+      - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
       - echo generating jar
       - echo building the docker image.....
       - docker build -t $REPOSITORY_URI:latest .
@@ -44,6 +43,6 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"userContainer","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG >  
+      - printf '[{"name":"orderContainer","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-     file: imagedefinitions.json
+    files: imagedefinitions.json
