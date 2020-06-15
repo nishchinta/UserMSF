@@ -6,11 +6,8 @@
 	<groupId>com.management</groupId>
 	<artifactId>UserMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>UserMS</name>
-	<description>UserMS</description>
 	<packaging>jar</packaging>
-
-	<name>User-Microservice</name>
+	<name>UserMS</name>
 	<description>User Buyer  Microservice</description>
 
 	<parent>
